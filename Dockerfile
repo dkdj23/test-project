@@ -4,6 +4,7 @@ FROM node:10.15-alpine
 RUN mkdir -p /root/app
 COPY package.json /root/app
 COPY yarn.lock /root/app
+COPY server.js /root/app
 COPY ./pages /root/app/pages
 
 
